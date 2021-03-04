@@ -1,0 +1,23 @@
+#information {
+    background-color: darkgray;
+    padding: 50px;
+    
+}
+
+#button {
+    margin-top: 10px;
+}
+
+.form-group {
+
+    background-color: lightgray;
+    border: black;
+    border-width: 2px;
+    padding: 5px;
+    width: 50%
+}
+
+form {
+    border: 1px solid lightgrey;
+    padding: 10px;
+  }
