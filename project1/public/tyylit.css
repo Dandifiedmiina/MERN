@@ -21,3 +21,7 @@ form {
     border: 1px solid lightgrey;
     padding: 10px;
   }
+
+#signin input {
+    padding:10px;
+    }

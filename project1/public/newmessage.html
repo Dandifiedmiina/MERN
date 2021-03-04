@@ -8,9 +8,7 @@
 </head>
 
 <body>
-    <div>
-        <!-- Huomaa, että lomakkeen metodi = POST -->
-        <!-- action -määrittelee URL:n johon POST-tyyppinen pyyntö lähetetään -->
+         <div>
           <form method="POST" action="/kirjaudu">
             <div class="form-group">
               <label for="exampleInputN">Name</label>
@@ -18,7 +16,6 @@
                 type="name"
                 class="form-control"
                 id="name"
-                aria-describedby="namelHelp"
                 placeholder="Write your name here"
                 name="name" 
               />
@@ -39,7 +36,6 @@
                   type="Message"
                   class="form-control"
                   id="message"
-                  aria-describedby="messageHelp"
                   placeholder="What do you want to tell us?"
                   name="message" 
                 />
