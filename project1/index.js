@@ -40,7 +40,7 @@ app.post("/newmessage2", function (req, res) {
 
   var datanew = JSON.stringify(json);
 
-  fs.writeFileSync("guestbook.json", datanew);
+  fs.writeFileSync("./project1/guestbook.json", datanew);
 
   res.send("Message was sent!");
   console.log("added");
