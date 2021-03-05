@@ -38,7 +38,7 @@ app.post("/newmessage2", function (req, res) {
 
   json.push(newitem);
 
-  var datanew = JSON.stringify(json);
+  var datanew = JSON.stringify(json, "", 1);
 
   fs.writeFileSync("./project1/guestbook.json", datanew);
 
@@ -48,6 +48,10 @@ app.post("/newmessage2", function (req, res) {
 
 app.get("/ajaxmessage", function (req, res) {
   res.sendFile(__dirname + "/public/ajaxmessage.html");
+});
+
+app.get("/readguestbook", function (req, res) {
+  res.sendFile(__dirname + "\\readguestbook.html");
 });
 
 app.get("*", function (req, res) {

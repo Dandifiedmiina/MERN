@@ -1,8 +1,8 @@
-$.loadGuestbook("guestbook.json", function (data) {
-  let messages = `<table>
-          <thead><tr><th>Name</th><th>Country</th><th>Message</th></tr></thead><tbody>`;
+$(document).ready(function () {
+ $.getJSON("guestbook.json", function (data) {
+  var table = "<table><tr><th>Names</th><th>Countries</th><th>Messages</th><th>Dates</th></tr>";
   for (var x = 0; x < data.length; x++) {
-    messages +=
+    table +=
       "<tr>" +
       "<td>" +
       data[x].name +
@@ -15,7 +15,7 @@ $.loadGuestbook("guestbook.json", function (data) {
       "</td>" +
       "<td>" ;
   }
-  messages += "</tbody></table>";
 
-  $("#target").html(messages);
+  $("#msgtable").html(table);
+ });
 });
